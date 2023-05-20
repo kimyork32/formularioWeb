@@ -42,20 +42,19 @@ function enviar(){
     limpiar();
 }
 
-
-function check(string){
-    if(string.length === 0){
+function check(string) {
+    if (string.length === 0) {
+      return false;
+    }
+    for (let i = 0; i < string.length; i++) {
+      let char = string[i].toLowerCase(); // Convertir el carácter a minúscula para verificar el rango
+      if (!((char >= 'a' && char <= 'z') || char === ' ')) {
         return false;
+      }
     }
-    for(let i=0; i<string.length; i++){
-        let char = string.charCodeAt(i);
-        if(!((char >= 65 && char <=90) || (char >= 97 && char <=122))){
-            return false;
-        }
-        return true;
-    }
-    return true;
-}
+    return true; // Mover el return true fuera del bucle para que se ejecute después de verificar todos los caracteres
+  }
+
 function marcado(){
     const listOpc = document.querySelectorAll('input[name="sexo"]');
     for(let i = 0; i < listOpc.length; i++){
