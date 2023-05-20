@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Segundo Laboratorio</title>
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- <style>
+        
+    </style> -->
+</head>
+<body>
+	<script src="funciones.js"></script>
+	<h1>Registro de Alumnos:</h1>
+	<form>
+		<!-- Campo para ingresar el nombre -->
+		<label>Nombre:</label>
+		<input type="text" name="nombre"><br>
+
+		<!-- Campo para ingresar los apellidos -->
+		<label>Apellidos:</label>
+		<input type="text" name="apellidos"><br>
+
+		<!-- Radio buttons para seleccionar el sexo -->
+		<label>Sexo:</label><br>
+		<input type="radio" name="sexo" value="masculino">Masculino<br>
+		<input type="radio" name="sexo" value="femenino">Femenino<br>
+
+		<!-- Campo para ingresar el correo electrónico -->
+		<label>Email:</label>
+		<input type="text" name="correo"><br>
+
+		<!-- Campo para ingresar la dirección -->
+		<label>Direccion:</label>
+		<input type="text" name="direccion">
+
+        <!-- menú desplegable para seleccionar la ciudad -->
+        <label for="ciudad">Ciudad: </label>
+		<select name="ciudad">
+			<option value="" selected></option>
+			<option value="ciudad1">Ayacucho</option>
+			<option value="ciudad2">Arequipa</option>
+			<option value="ciudad3">Lima</option>
+			<option value="ciudad4">Ica</option>
+		</select><br>
+
+		<!-- Campo de texto para ingresar el requerimiento -->
+		<label for="	">Requerimiento:</label>
+        <textarea name="requerimiento" rows="4" cols="0"></textarea><br>
+        
+		<!-- Botón para limpiar los campos -->
+		<button type="button" onclick="limpiar()">Limpiar</button>
+		<!-- Botón para enviar la información -->
+		<button type="button" onclick="enviar()">Enviar</button>
+	</form>
+	<!-- Script para limpiar los campos -->
+	
+</body>
